@@ -57,7 +57,7 @@
 <!-- END LOADER -->
 
 <!-- Home Popup Section -->
-<div class="modal fade subscribe_popup" id="onload-popup" tabindex="-1" role="dialog" aria-hidden="true">
+<!-- <div class="modal fade subscribe_popup" id="onload-popup" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
@@ -96,7 +96,7 @@
             </div>
     	</div>
     </div>
-</div>
+</div> -->
 <!-- End Screen Load Popup Section --> 
 
 <!-- START HEADER -->
@@ -411,7 +411,7 @@
         <div class="row align-items-center">
         	<div class="col-md-6">
                 <div class="page-title">
-            		<h1>Shopping Cart</h1>
+            		<h1>결제 목록</h1>
                 </div>
             </div>
             <div class="col-md-6">
@@ -439,17 +439,17 @@
                     	<thead>
                         	<tr>
                             	<th class="product-thumbnail">&nbsp;</th>
-                                <th class="product-name">Product</th>
-                                <th class="product-price">Price</th>
-                                <th class="product-quantity">Quantity</th>
-                                <th class="product-subtotal">Total</th>
-                                <th class="product-remove">Remove</th>
+                                <th class="product-name">이름</th>
+                                <th class="product-price">가격</th>
+                                <th class="product-quantity">수량</th>
+                                <th class="product-subtotal">총합</th>
+                                <th class="product-remove">삭제</th>
                             </tr>
                         </thead>
                         <tbody>
                         	<tr>
                             	<td class="product-thumbnail"><a href="#"><img src="assets/images/product_img1.jpg" alt="product1"></a></td>
-                                <td class="product-name" data-title="Product"><a href="#">Blue Dress For Woman</a></td>
+                                <td class="product-name" data-title="Product"><a href="#">충주시 사과축제 홍보대사</a></td>
                                 <td class="product-price" data-title="Price">$45.00</td>
                                 <td class="product-quantity" data-title="Quantity"><div class="quantity">
                                 <input type="button" value="-" class="minus">
@@ -491,14 +491,14 @@
 
                                     	<div class="col-lg-4 col-md-6 mb-3 mb-md-0">
                                             <div class="coupon field_form input-group">
-                                                <input type="text" value="" class="form-control form-control-sm" placeholder="Enter Coupon Code..">
+                                                <input type="text" value="" class="form-control form-control-sm" placeholder="쿠폰주소를 입력하세요">
                                                 <div class="input-group-append">
-                                                	<button class="btn btn-fill-out btn-sm" type="submit">Apply Coupon</button>
+                                                	<button class="btn btn-fill-out btn-sm" type="submit">쿠폰 적용</button>
                                                 </div>
                                             </div>
                                     	</div>
                                         <div class="col-lg-8 col-md-6  text-start  text-md-end">
-                                            <button class="btn btn-line-fill btn-sm" type="submit">Update Cart</button>
+                                            <button class="btn btn-line-fill btn-sm" type="submit">새로고침</button>
                                         </div>
                                     </div>
                                 </td>
@@ -518,15 +518,15 @@
         <div class="row">
         	<div class="col-md-6">
             	<div class="heading_s1 mb-3">
-            		<h6>Calculate Shipping</h6>
+            		<h6>광고 계산기</h6>
                 </div>
                 <form class="field_form shipping_calculator">
                     <div class="form-row">
                         <div class="form-group col-lg-12 mb-3">
                             <div class="custom_select">
                                 <select class="form-control">
-                                    <option value="">Choose a option...</option>
-                                    <option value="AX">Aland Islands</option>
+                                    <option value="">계약 유형</option>
+                                    <option value="AX">구독형</option>
                                     <option value="AF">Afghanistan</option>
                                     <option value="AL">Albania</option>
                                     <option value="DZ">Algeria</option>
@@ -776,15 +776,15 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6 mb-3">
-                            <input required="required" placeholder="State / Country" class="form-control" name="name" type="text">
+                            <input required="required" placeholder="광고주 / 인원" class="form-control" name="name" type="text">
                         </div>
                         <div class="form-group col-lg-6 mb-3">
-                            <input required="required" placeholder="PostCode / ZIP" class="form-control" name="name" type="text">
+                            <input required="required" placeholder="광고자 / 인원" class="form-control" name="name" type="text">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-12 mb-3">
-                            <button class="btn btn-fill-line" type="submit">Update Totals</button>
+                            <button class="btn btn-fill-line" type="submit">전체 계산</button>
                         </div>
                     </div>
                 </form>
@@ -792,27 +792,27 @@
             <div class="col-md-6">
             	<div class="border p-3 p-md-4">
                     <div class="heading_s1 mb-3">
-                        <h6>Cart Totals</h6>
+                        <h6>계산서 총합</h6>
                     </div>
                     <div class="table-responsive">
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <td class="cart_total_label">Cart Subtotal</td>
+                                    <td class="cart_total_label">예상금액</td>
                                     <td class="cart_total_amount">$349.00</td>
                                 </tr>
                                 <tr>
-                                    <td class="cart_total_label">Shipping</td>
-                                    <td class="cart_total_amount">Free Shipping</td>
+                                    <td class="cart_total_label">할인금액</td>
+                                    <td class="cart_total_amount"></td>
                                 </tr>
                                 <tr>
-                                    <td class="cart_total_label">Total</td>
+                                    <td class="cart_total_label">총 금액</td>
                                     <td class="cart_total_amount"><strong>$349.00</strong></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <a href="#" class="btn btn-fill-out">Proceed To CheckOut</a>
+                    <a href="#" class="btn btn-fill-out">결제</a>
                 </div>
             </div>
         </div>
@@ -826,14 +826,14 @@
     	<div class="row align-items-center">	
             <div class="col-md-6">
                 <div class="heading_s1 mb-md-0 heading_light">
-                    <h3>Subscribe Our Newsletter</h3>
+                    <h3>구독하고 정보를 받아보세요.</h3>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="newsletter_form">
                     <form>
-                        <input type="text" required="" class="form-control rounded-0" placeholder="Enter Email Address">
-                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">Subscribe</button>
+                        <input type="text" required="" class="form-control rounded-0" placeholder="이메일 주소를 입력하세요.">
+                        <button type="submit" class="btn btn-dark rounded-0" name="submit" value="Submit">구독</button>
                     </form>
                 </div>
             </div>
@@ -855,7 +855,7 @@
                         <div class="footer_logo">
                             <a href="#"><img src="assets/images/logo_light.png" alt="logo"/></a>
                         </div>
-                        <p>If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
+                        <p>우리는 광고를 연결해줍니다.</p>
                     </div>
                     <div class="widget">
                         <ul class="social_icons social_white">
@@ -869,56 +869,37 @@
         		</div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
                 	<div class="widget">
-                        <h6 class="widget_title">Useful Links</h6>
+                        <h6 class="widget_title">홈페이지</h6>
                         <ul class="widget_links">
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">소개</a></li>
                             <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Location</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <!-- <li><a href="#">Location</a></li>
+                            <li><a href="#">Affiliates</a></li> -->
+                            <li><a href="#">연락</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
                 	<div class="widget">
-                        <h6 class="widget_title">Category</h6>
+                        <h6 class="widget_title">카테고리</h6>
                         <ul class="widget_links">
-                            <li><a href="#">Men</a></li>
-                            <li><a href="#">Woman</a></li>
-                            <li><a href="#">Kids</a></li>
-                            <li><a href="#">Best Saller</a></li>
-                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">블로거</a></li>
+                            <li><a href="#">유튜버</a></li>
+                            <li><a href="#">인프루언서</a></li>
+                            <li><a href="#">기업</a></li>
+                            <li><a href="#">이벤트</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-6">
                 	<div class="widget">
-                        <h6 class="widget_title">My Account</h6>
+                        <h6 class="widget_title">계정</h6>
                         <ul class="widget_links">
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Discount</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Orders History</a></li>
-                            <li><a href="#">Order Tracking</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                	<div class="widget">
-                        <h6 class="widget_title">Contact Info</h6>
-                        <ul class="contact_info contact_info_light">
-                            <li>
-                                <i class="ti-location-pin"></i>
-                                <p>123 Street, Old Trafford, New South London , UK</p>
-                            </li>
-                            <li>
-                                <i class="ti-email"></i>
-                                <a href="mailto:info@sitename.com">info@sitename.com</a>
-                            </li>
-                            <li>
-                                <i class="ti-mobile"></i>
-                                <p>+ 457 789 789 65</p>
-                            </li>
+                            <li><a href="#">내 계정</a></li>
+                            <li><a href="#">할인</a></li>
+                            <!-- <li><a href="#">Returns</a></li> -->
+                            <li><a href="#">주문 기록</a></li>
+                            <li><a href="#">주문 상황</a></li>
                         </ul>
                     </div>
                 </div>
@@ -929,7 +910,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="mb-md-0 text-center text-md-start">© 2020 All Rights Reserved by Bestwebcreator</p>
+                    <p class="mb-md-0 text-center text-md-start">© 2024. Bae Junghwan all rights reserved</p>
                 </div>
                 <div class="col-md-6">
                     <ul class="footer_payment text-center text-lg-end">
